@@ -1,1 +1,1 @@
-console.log("hola");
+(()=>{"use strict";document.querySelector("#content"),console.log("jamon");let e=(()=>{console.log("hola");let e=document.createElement("div");e.classList.add("header");let t=document.createElement("div");return t.classList.add("headerTitle"),t.textContent="Restaurante",e.appendChild(t),e})();document.body.appendChild(e)})();
