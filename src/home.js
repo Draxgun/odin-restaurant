@@ -38,10 +38,22 @@ let createHeader = () =>{
 
 /* Creates the header title */
 let createHeaderTitle = (header) => {
+
+    let headerTitleContainer = document.createElement('div');
+    headerTitleContainer.classList.add('headerTitleContainer')
+
+    let hamburguerIcon = document.createElement('i');
+    hamburguerIcon.classList.add('material-icons');
+    hamburguerIcon.textContent = 'fastfood';
+    headerTitleContainer.appendChild(hamburguerIcon)
+
+
     let headerTitle = document.createElement('div');
     headerTitle.classList.add('headerTitle')
     headerTitle.textContent = 'ManshaBurguer'
-    header.appendChild(headerTitle)
+    headerTitleContainer.appendChild(headerTitle)
+
+    header.appendChild(headerTitleContainer)
 }
 
 /* Creates the option container with the options */
@@ -107,7 +119,6 @@ let createFooter = () =>{
 
 /*Creates a footer*/
 let createFooterText = (footer) => {
-
 
     let footerText = document.createElement('div');
     footerText.textContent = 'A project by Alejandro Banuelos';
