@@ -1,9 +1,10 @@
-import { loadHomePage } from "./home";
+import {loadHomePage } from "./home";
 
-let mainDiv = document.querySelector('#content')
+let content = document.getElementById('content')
 
-console.log('jamon')
+console.log('test')
 
-let header = loadHomePage()
+let header =loadHomePage()
 
-document.body.appendChild(header)
+content.appendChild(header)
+

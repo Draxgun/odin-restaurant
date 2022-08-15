@@ -11,7 +11,6 @@ let loadHomePage =  ()  => {
     headerTitle.textContent = 'Restaurante'
     header.appendChild(headerTitle)
 
-
     return header
 }
 
