@@ -2,19 +2,38 @@
 let loadHomePage =  ()  => {
 
     /* Checks for the content container */
-    let content = document.getElementById('content')
+    let main = document.getElementById('main')
 
-    /*Header Container */
-    let header = document.createElement('div');
-    header.classList.add('header')
+    /* Creates the header */
+    let header = createHeader()
+    main.appendChild(header)
 
-    /*Adds the header to the main container */
-    content.appendChild(header)
+    /* Content*/
+    let content = createContent()
+    main.appendChild(content)
 
+    /*Footer*/
+    let footer = createFooter()
+    main.appendChild(footer)
+
+    /*Adds the header container*/
     createHeaderTitle(header)
     createTabButtons(header)
 
+    /*Adds the content container to the content section*/
+    createContentContainer(content)
+
+    /*Adds the footer Text*/
+    createFooterText(footer)
+
     
+}
+
+let createHeader = () =>{
+        /*Header Container */
+        let header = document.createElement('div');
+        header.classList.add('header')
+    return header
 }
 
 /* Creates the header title */
@@ -63,6 +82,41 @@ let createTabButtons = (header) =>{
 
    
 }
+
+/*Creates Content Section*/
+let createContent = () => {
+    let content = document.createElement('div')
+    content.classList.add('content')
+    return content
+}
+
+/*Create content container*/
+let createContentContainer = (content) => {
+    let contentContainer = document.createElement('div')
+    contentContainer.classList.add('contentContainer')
+    content.appendChild(contentContainer)
+}
+
+/* Creates the footer */
+let createFooter = () =>{
+    let footer = document.createElement('div');
+    footer.classList.add('footer')
+    
+    return footer
+}
+
+/*Creates a footer*/
+let createFooterText = (footer) => {
+
+
+    let footerText = document.createElement('div');
+    footerText.textContent = 'A project by Alejandro Banuelos';
+    footerText.classList.add('footerText')
+    footer.appendChild(footerText)
+
+}
+
+
 
 export{
     loadHomePage
