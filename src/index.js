@@ -1,10 +1,10 @@
 import {loadHomePage } from "./home";
+import './style.css';
 
-let content = document.getElementById('content')
 
-console.log('test')
 
-let header =loadHomePage()
+console.log('Hola')
 
-content.appendChild(header)
+loadHomePage()
+
 
