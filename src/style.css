@@ -35,7 +35,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
     padding-bottom: 5px;
     background-color: var(--purple);
     text-shadow: 5px 5px #fa2a2a;
@@ -79,8 +79,9 @@ body{
 }
 
 .content{
-    flex:2;
+    flex:auto;
     display: flex;
+    height: 75%;
     justify-content: center;
     align-content: center;
     padding-top: 20px;
@@ -91,7 +92,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 90%;
-    height: 50%;
+    height: 100%;
     padding: 10px;
     border: none;
     border-radius: 50px;

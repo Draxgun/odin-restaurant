@@ -69,18 +69,21 @@ let createTabButtons = (header) =>{
     let homeButton  = document.createElement('button')
     homeButton.classList.add('buttonFront')
     homeButton.textContent = 'Home'
+    homeButton.setAttribute('id','home')
     optionContainer.appendChild(homeButton)
 
     /* Creates the Menu button */
     let menuButton  = document.createElement('button')
     menuButton.classList.add('buttonFront')
     menuButton.textContent = 'Menu'
+    menuButton.setAttribute('id','menu')
     optionContainer.appendChild(menuButton)
 
     /* Creates the about button */
     let aboutButton  = document.createElement('button')
     aboutButton.classList.add('buttonFront')
     aboutButton.textContent = 'About'
+    aboutButton.setAttribute('id','about')
     optionContainer.appendChild(aboutButton)
 
 
@@ -88,6 +91,7 @@ let createTabButtons = (header) =>{
     let contactButton  = document.createElement('button')
     contactButton.classList.add('buttonFront')
     contactButton.textContent = 'Contact'
+    contactButton.setAttribute('id','contact')
     optionContainer.appendChild(contactButton)
 
     header.appendChild(optionContainer)

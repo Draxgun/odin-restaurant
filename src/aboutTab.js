@@ -1,17 +1,11 @@
 import chefHeadMaya from './chefHeadMaya.png'
 
-
-let loadHomeTab = () => {
+let loadAboutTab = () => {
     let contentContainer = document.getElementsByClassName('contentContainer')[0]
 
     let mainText = loadMainText()
-    let imageSide = loadImageSide()
 
     contentContainer.appendChild(mainText)
-    contentContainer.appendChild(imageSide)
-
-
-
 }
 
 let loadMainText = () => {
@@ -20,9 +14,14 @@ let loadMainText = () => {
     textContainer.classList.add('textContainer')
 
     let mainTitle = document.createElement('div')
-    mainTitle.classList.add("mainTitle");
-    mainTitle.textContent = 'Welcome to ManshaBurguer can I get your order?'
+    mainTitle.classList.add("mainTitleAbout");
+    mainTitle.textContent = 'About us'
     textContainer.appendChild(mainTitle)
+
+    let mainText = document.createElement('div')
+    mainText.classList.add("mainTextAbout");
+    mainText.textContent = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum cursus mauris, et tristique tellus hendrerit ac. Maecenas nec lobortis urna. Vivamus molestie porta arcu, a tincidunt nunc auctor at.'
+    textContainer.appendChild(mainText)
     
     return textContainer
 
@@ -39,5 +38,5 @@ let loadImageSide = () => {
 
 
 export{
-    loadHomeTab
+    loadAboutTab
 }
