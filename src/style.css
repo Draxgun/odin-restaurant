@@ -95,10 +95,12 @@ body{
     height: 100%;
     padding: 10px;
     border: none;
-    border-radius: 50px;
+    gap: 20px;
 }
 
 
+
+/* Home Info */
 .textContainer{
     display: flex;
     flex-direction: column;
@@ -118,6 +120,29 @@ body{
 .homeImage{
     height: 70%;
     width: auto;
+}
+
+/* About */
+.mainTitleAbout{
+    display:flex;
+    flex: 1;
+    font-size: 90px;
+    font-weight: bold;
+    color: var(--purple);
+    text-shadow: 5px 5px var(--orange); 
+}
+
+.mainTextAbout{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--purple);
+    text-shadow: 5px 5px var(--orange); 
+}
+
+.aboutImage{
+    height: 70%;
+    width: auto;
+    border-radius: 20px;
 }
 
 
