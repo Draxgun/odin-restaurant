@@ -1,7 +1,7 @@
 :root{
     --purple:#541690;
     --red: #FF4949;
-    --organge: #FF8D29;
+    --orange: #FF8D29;
     --yellow: #FFCD38;
 }
 
@@ -87,6 +87,7 @@ body{
 }
 
 .contentContainer{
+    display: flex;
     width: 80%;
     height: 90%;
     padding: 10px;
@@ -95,6 +96,27 @@ body{
     background-color: var(--red);
     box-shadow: 2px 2px 2px 1px #fa2a2a;
 }
+
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.mainTitle{
+    display:flex;
+    flex: 1;
+    font-size: 80px;
+    font-weight: bold;
+    color: var(--purple);
+    text-shadow: 5px 5px var(--orange);
+}
+
+.homeImage{
+    src: url();
+}
+
+
 
 .footer{
     flex:0.5;
