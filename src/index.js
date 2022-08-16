@@ -1,6 +1,7 @@
 import {loadHomePage } from "./home";
 import { loadHomeTab } from "./homeTab";
 import { loadAboutTab } from "./aboutTab";
+import { loadContactTab } from "./contactTab";
 import {clearContent} from './clearFunction'
 import './style.css';
 
@@ -21,6 +22,8 @@ homeButton.addEventListener('click',() =>{
 })
 
 
+
+
 /* About */
 let aboutButton = document.getElementById('about')
 
@@ -28,6 +31,15 @@ aboutButton.addEventListener('click',()=>{
     clearContent()
     loadAboutTab()
 })
+
+/* Contact */
+let contactButton = document.getElementById('contact')
+
+contactButton.addEventListener('click',()=>{
+    clearContent()
+    loadContactTab()
+})
+
 
 
 

@@ -136,13 +136,34 @@ body{
     font-size: 30px;
     font-weight: bold;
     color: var(--purple);
-    text-shadow: 5px 5px var(--orange); 
+    text-shadow: 2px 2px var(--orange); 
 }
 
 .aboutImage{
     height: 70%;
     width: auto;
     border-radius: 20px;
+}
+
+/* contact */
+.contactTitle, .imageContainerTitle{
+    font-size: 50px;
+    font-weight: bold;
+    color: var(--purple);
+    text-shadow: 5px 5px var(--orange); 
+}
+
+.contact{
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--purple);
+    text-shadow: 2px 2px var(--orange); 
+}
+
+.imageContainerImage{
+    border-radius: 20px;
+    width: 80%;
+    height: auto;
 }
 
 
