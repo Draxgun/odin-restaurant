@@ -1,3 +1,4 @@
+import chefHeadMaya from './chefHeadMaya.png'
 
 let loadHomeTab = () => {
     let contentContainer = document.getElementsByClassName('contentContainer')[0]
@@ -21,11 +22,7 @@ let loadMainText = () => {
     mainTitle.classList.add("mainTitle");
     mainTitle.textContent = 'Welcome to ManshaBurguer can I get your order?'
     textContainer.appendChild(mainTitle)
-
-    let order = document.createElement('button')
-    order.classList.add('orderButton')
-    textContainer.appendChild(order)
-
+    
     return textContainer
 
 } 
@@ -33,6 +30,7 @@ let loadMainText = () => {
 let loadImageSide = () => {
     let homeImage = document.createElement('img');
     homeImage.classList.add('homeImage')
+    homeImage.src = chefHeadMaya
 
     return homeImage
 }

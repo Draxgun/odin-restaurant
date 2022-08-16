@@ -79,7 +79,7 @@ body{
 }
 
 .content{
-    flex:10;
+    flex:2;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -88,19 +88,21 @@ body{
 
 .contentContainer{
     display: flex;
-    width: 80%;
-    height: 90%;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50%;
     padding: 10px;
     border: none;
     border-radius: 50px;
-    background-color: var(--red);
-    box-shadow: 2px 2px 2px 1px #fa2a2a;
 }
 
 
 .textContainer{
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    width: 600px;
 }
 
 .mainTitle{
@@ -113,13 +115,13 @@ body{
 }
 
 .homeImage{
-    src: url();
+    height: 70%;
+    width: auto;
 }
 
 
-
 .footer{
-    flex:0.5;
+    flex:1;
     display:flex;
     justify-content: center;
     align-content: center;
