@@ -48,7 +48,7 @@ let createMenuDOM = () => {
         /*price*/
         let priceItem = document.createElement('div')
         priceItem.classList.add('itemPrice')
-        priceItem.textContent = item.price
+        priceItem.textContent = `Price: ${item.price} $`
         textSide.appendChild(priceItem)
 
         let imageItem = document.createElement('img')
